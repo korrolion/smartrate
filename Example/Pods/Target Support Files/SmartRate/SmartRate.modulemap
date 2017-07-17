@@ -1,0 +1,6 @@
+framework module SmartRate {
+  umbrella header "SmartRate-umbrella.h"
+
+  export *
+  module * { export * }
+}

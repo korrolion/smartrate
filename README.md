@@ -22,7 +22,7 @@ pod "SmartRate"
 
 ## Author
 
-korrolion, ikorolev@wamba.com
+korrolion, korrolion@mail.ru
 
 ## License
 

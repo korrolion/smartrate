@@ -1,0 +1,16 @@
+PODS:
+  - SmartRate (0.1.0)
+
+DEPENDENCIES:
+  - SmartRate (from `../`)
+
+EXTERNAL SOURCES:
+  SmartRate:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SmartRate: f4b8ca0c4f424cb99cf764b699b36dd176b2e08b
+
+PODFILE CHECKSUM: 5c5f6d374149ec949578e50554146f15fb4514f8
+
+COCOAPODS: 1.2.0
