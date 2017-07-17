@@ -13,21 +13,21 @@ SMBlocker.shared.showRatingForEveryVersion = true //Will reset block if the app 
 let countTrigger = SMTriggerCounterType(notificationName: ViewController.duplicateActionNotificationName, repeatTimes: 4, uniqName: "press4TimesTrigger")
 //For every trigger you can provide custom fire function, or use default
 countTrigger.customFireCompletion = {
-if #available(iOS 10.3, *) {
-SKStoreReviewController.requestReview()
-}
+    if #available(iOS 10.3, *) {
+        SKStoreReviewController.requestReview()
+    }
 }
 //Will fire on 4-th button press
 SMTriggersStore.shared.addTrigger(countTrigger)
 
 let chainTrigger = SMTriggerChainType(notificationNames: [
-ViewController.step1NotificationName, //provide sequence of steps
-ViewController.step2NotificationName,
-ViewController.step3NotificationName,
-],
-breakNotificationName: ViewController.breakNotificationName, //You can break chain on any other action, or set nil
-uniqName: "pressButtons123Trigger"
-)
+        ViewController.step1NotificationName, //provide sequence of steps
+        ViewController.step2NotificationName,
+        ViewController.step3NotificationName,
+    ],
+    breakNotificationName: ViewController.breakNotificationName, //You can break chain on any other action, or set nil
+    uniqName: "pressButtons123Trigger"
+    )
 //Will fire after correct sequence of 3 steps. Will not fire if sequence will be broken
 SMTriggersStore.shared.addTrigger(chainTrigger)
 ```
