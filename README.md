@@ -1,5 +1,8 @@
 # SmartRate
 
+AppStore rating request.
+Show your users rating alert only then they are happy.
+
 This pod will help you to realize your complex logic of showing rating window.
 You could set any sequence of actions.
 
