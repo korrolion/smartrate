@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SmartRate_Example' do
+  pod 'SmartRate', :path => '../'
+
+  target 'SmartRate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
