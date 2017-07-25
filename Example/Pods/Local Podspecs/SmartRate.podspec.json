@@ -1,18 +1,18 @@
 {
   "name": "SmartRate",
   "version": "0.1.0",
-  "summary": "A short description of SmartRate.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "This pod will help you to realize your complex logic of showing rating alert window.",
+  "description": "AppStore rating request.\nShow your users rating alert only then they are happy.\n\nThis pod will help you to realize your complex logic of showing rating alert window.\nYou could set any sequence of actions.",
   "homepage": "https://github.com/korrolion/SmartRate",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "korrolion": "ikorolev@wamba.com"
+    "korrolion": "korrolion@mail.ru"
   },
   "source": {
-    "git": "https://github.com/korrolion/SmartRate.git",
+    "git": "https://github.com/korrolion/smartrate.git",
     "tag": "0.1.0"
   },
   "platforms": {
