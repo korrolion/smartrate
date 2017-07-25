@@ -23,6 +23,9 @@ public final class SMBlocker: NSObject {
     //Do not show rating n seconds after install
     public var minTimeAfterInstalled = 3600 * 24 * 5 // 5 days
     
+    //Do not show rating n seconds after fire
+    public var minTimeAfterFire = 3600 * 24 * 10 // 10 days
+    
     //Do not show rating n seconds after launch
     public var minTimeAfterLaunch = 10 // 10 seconds
     
@@ -41,6 +44,12 @@ public final class SMBlocker: NSObject {
         //Should wait after launch
         let expireLaunchDate = launchDate.addingTimeInterval(TimeInterval(minTimeAfterLaunch))
         if case .orderedDescending = expireLaunchDate.compare(Date()) { return true }
+        //Should wait after fire
+        if let fireDate = defaults.object(forKey: kFireDate) as? Date {
+            let expireFireDate = fireDate.addingTimeInterval(TimeInterval(minTimeAfterFire))
+            if case .orderedDescending = expireFireDate.compare(Date()) { return true }
+        }
+        
         
         guard let version = UserDefaults.standard.string(forKey: kBlockedVersion) else { return false }
         //Blocked if we should show rating once
@@ -59,8 +68,15 @@ public final class SMBlocker: NSObject {
     
     private let kBlockedVersion = "SMkBlockedVersion"
     private let kInstallDate = "SMkInstallDate"
+    private let kFireDate = "SMkFireDate"
     
     private var launchDate = Date()
+    
+    func setFireDate() {
+        let defaults = UserDefaults.standard
+        defaults.set(Date(), forKey: kFireDate)
+        defaults.synchronize()
+    }
     
     func setLaunchDateIfNeeded() {
         let defaults = UserDefaults.standard

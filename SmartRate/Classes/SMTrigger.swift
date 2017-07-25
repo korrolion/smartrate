@@ -20,6 +20,7 @@ public class SMTrigger: NSObject {
     
     internal func fire() {
         if SMBlocker.shared.isBlocked { return }
+        SMBlocker.shared.setFireDate()
         
         if let customFire = customFireCompletion {
             customFire()

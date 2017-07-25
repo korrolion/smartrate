@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Configure SmartRate
         SMBlocker.shared.minTimeAfterInstalled = 60 //Will not fire 60 seconds after first launch
         SMBlocker.shared.minTimeAfterLaunch = 10 //Will not fire 10 seconds after launch
+        SMBlocker.shared.minTimeAfterFire = 60 //Will not fire 60 seconds after fire 😀
         SMBlocker.shared.showRatingForEveryVersion = true //Will reset block if the app version will change
         
         //Create triggers for SmartRate
