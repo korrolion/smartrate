@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SmartRate'
   s.version          = '0.1.0'
-  s.summary          = 'This pod will help you to realize your complex logic of showing rating alert window.'
+  s.summary          = 'iOS pod that will help you easily implement your logic to remind your iPhone app's users to review the app'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,11 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-AppStore rating request.
-Show your users rating alert only then they are happy.
-
-This pod will help you to realize your complex logic of showing rating alert window.
-You could set any sequence of actions.
+Ask your users to make a review only when they are happy.
+This pod will help you to implement your complex logic of doing this.
+You can set any sequence of actions.
                        DESC
 
   s.homepage         = 'https://github.com/korrolion/SmartRate'

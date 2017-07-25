@@ -1,10 +1,10 @@
 # SmartRate
 
-AppStore rating request.
-Show your users rating alert only then they are happy.
+Ask your users to make a review only when they are happy.
 
-This pod will help you to realize your complex logic of showing rating window.
-You could set any sequence of actions.
+This pod will help you to implement your complex logic of doing this.
+
+You can set any sequence of actions.
 
 ```swift
 //Configure SmartRate
