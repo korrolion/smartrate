@@ -1,8 +1,8 @@
 {
   "name": "SmartRate",
   "version": "0.1.0",
-  "summary": "This pod will help you to realize your complex logic of showing rating alert window.",
-  "description": "AppStore rating request.\nShow your users rating alert only then they are happy.\n\nThis pod will help you to realize your complex logic of showing rating alert window.\nYou could set any sequence of actions.",
+  "summary": "iOS pod that will help you easily implement your logic to remind your iPhone app's users to review the app",
+  "description": "Ask your users to make a review only when they are happy.\nThis pod will help you to implement your complex logic of doing this.\nYou can set any sequence of actions.",
   "homepage": "https://github.com/korrolion/SmartRate",
   "license": {
     "type": "MIT",

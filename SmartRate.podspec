@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SmartRate'
   s.version          = '0.1.0'
-  s.summary          = 'iOS pod that will help you easily implement your logic to remind your iPhone app's users to review the app'
+  s.summary          = "iOS pod that will help you easily implement your logic to remind your iPhone app's users to review the app"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
