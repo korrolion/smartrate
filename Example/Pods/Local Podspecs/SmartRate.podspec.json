@@ -1,6 +1,6 @@
 {
   "name": "SmartRate",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "iOS pod that will help you easily implement your logic to remind your iPhone app's users to review the app",
   "description": "Ask your users to make a review only when they are happy.\nThis pod will help you to implement your complex logic of doing this.\nYou can set any sequence of actions.",
   "homepage": "https://github.com/korrolion/SmartRate",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/korrolion/smartrate.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"

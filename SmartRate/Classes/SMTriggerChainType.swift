@@ -53,7 +53,7 @@ public class SMTriggerChainType: SMTrigger {
         if counter.value == stepNumber - 1 {
             //Correct step
             if counter.increment() == notificationNames.count {
-                fire()
+                _ = fire()
                 counter.reset()
             }
         } else {

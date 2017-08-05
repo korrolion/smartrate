@@ -1,5 +1,5 @@
 PODS:
-  - SmartRate (0.1.0)
+  - SmartRate (0.1.2)
 
 DEPENDENCIES:
   - SmartRate (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SmartRate: b0fa7e62577ae271522dbdc4d3c7c08932069d85
+  SmartRate: e1e2f8b898a2cdeec35d1df4587c2a27d705eb74
 
 PODFILE CHECKSUM: 5c5f6d374149ec949578e50554146f15fb4514f8
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

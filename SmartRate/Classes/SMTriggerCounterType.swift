@@ -49,8 +49,7 @@ public class SMTriggerCounterType: SMTrigger {
     }
     
     private func handleNotification(_ notification: Notification) {
-        if counter.increment() >= repeatTimes {
-            fire()
+        if counter.increment() >= repeatTimes, fire() {
             counter.reset()
         }
     }

@@ -18,17 +18,19 @@ public class SMTrigger: NSObject {
     
     //MARK: - Private
     
-    internal func fire() {
-        if SMBlocker.shared.isBlocked { return }
+    internal func fire() -> Bool {
+        if SMBlocker.shared.isBlocked { return false }
         SMBlocker.shared.setFireDate()
         
         if let customFire = customFireCompletion {
             customFire()
-            return
+            return true
         }
         if #available(iOS 10.3, *) {
             SKStoreReviewController.requestReview()
         }
+        
+        return true
     }
     
     internal override init() {
