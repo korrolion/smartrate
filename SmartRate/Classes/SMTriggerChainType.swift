@@ -46,7 +46,7 @@ public class SMTriggerChainType: SMTrigger {
         }
     }
     
-    private dynamic func handleNotification(_ notification: Notification) {
+    @objc private dynamic func handleNotification(_ notification: Notification) {
         let stepNumber = stepNumberFor(notification: notification)
         if stepNumber == 0 { return }
         
@@ -65,7 +65,7 @@ public class SMTriggerChainType: SMTrigger {
         }
     }
     
-    private dynamic func handleBreakNotification(_ notification: Notification) {
+    @objc private dynamic func handleBreakNotification(_ notification: Notification) {
         counter.reset()
     }
     

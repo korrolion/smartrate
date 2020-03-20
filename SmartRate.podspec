@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartRate'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = "iOS pod that will help you easily implement your logic to remind your iPhone app's users to review the app"
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ You can set any sequence of actions.
   s.source           = { :git => 'https://github.com/korrolion/smartrate.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'SmartRate/Classes/**/*'
   
